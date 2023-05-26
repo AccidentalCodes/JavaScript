@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="siya" placeholder="enter the value" > 
+   <button onclick="gets()">Add</button>
+</body>
+
+<script>
+    function gets(){
+        let d = document.getElementById("siya")
+        let a = Math.sqrt(d.value);
+        console.log(a);
+        document.write(a)
+        // console.log(d.value * d.value);
+    }
+</script>
+</html>
+
+<!-- 
+•👉 getElementById(): Accesses the first element with specified id
+•👉 getElementByName(): Accesses all the elements with the specified name
+•👉 getElementByTagName():Accesses all elements with the specified Tag name
+•👉 write(): Writes HTML JavaScript code 
+•👉 writeIn(): Same as write() just adds a newline after each statement
+ -->

@@ -4,6 +4,8 @@ const person = {
     roll: "Developer"
  };
 console.log(person);
+
+console.log(person.prototype)
  
 // 👉 access object: dot notation vs bracket notation
 console.log(person.Name);

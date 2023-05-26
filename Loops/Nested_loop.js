@@ -22,7 +22,7 @@ for ( let c = 1; c <=8; c++) {
     s += "*"
     }
      document.write("<br>")
-     document.write(s)           
+     document.write(s)            
    }
   
 
@@ -52,3 +52,8 @@ for ( let c = 1; c <=8; c++) {
   // **
   // **
   // **
+
+
+
+
+ 

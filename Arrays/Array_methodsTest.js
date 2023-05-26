@@ -2,6 +2,8 @@
 // 👉 forEach() - loop over the array
 let arr1 = [1,2,3,4,5]
 arr1.forEach((i,r,t) => {console.log(t)})
+// (value,index,array)
+
 
 // Output : 
 // 1
@@ -116,3 +118,76 @@ let index = letter3.fill("new",2)
 console.log(index);
 
 
+
+
+// 👉 Map example
+function process(x){
+    // return x * 2     // 👉 Multiple
+    return x.toString(2)  // 👉 binary
+}
+let arri = [1,5,2,4,3]
+const output = arri.map(process)
+console.log(output);
+
+// 👉 Filter example
+function isfilter(x){
+    // return x % 2 // 👉 Find out odd number
+    return x % 2 === 0 // 👉 Find out even number
+}
+let arri1 = [1,5,2,4,3]
+const output1 = arri1.filter(isfilter)
+console.log(output1);
+
+// 👉 Reduce example
+let arri2 = [1,5,2,4,3]
+const f = arri2.reduce(function(acc,curr){
+    acc = acc + curr  // 👉 Add
+    return acc
+},0)
+console.log(f);
+
+ // 👉 find max in array using Reduce Methods
+ let arri3 = [1,5,2,4,3] 
+ const g = arri3.reduce(function(max,curr){
+    if(curr > max){
+        max = curr   // 👉 Find max value
+    }
+    return max
+ },0)
+console.log(g);
+
+// let arri4 = [1,5,2,4,3] 
+// function maxx (arrr,currr){
+//     if(arrr > currr){
+//         currr = arrr
+//     }
+//     return arrr
+// }
+
+// const p = arri4.reduce(maxx)
+// console.log(p);
+
+
+ // 👉 Age count using Reduce Methods
+let myArr = [
+    { studenName: "jack",age: 20,studenSection: "a" },
+    { studenName: "tom",age: 16,Section: "c" },
+    { studenName: "john",age: 16,studenSection: "b" }
+];
+
+const b = myArr.reduce(function(arr,curr){
+if(arr[curr.age]){
+    arr[curr.age] = ++ arr[curr.age]
+}
+else{
+    arr[curr.age] = 1
+}
+return arr;
+},{})
+
+console.log(b);
+
+const q = myArr.filter(x => x.age < 18)
+console.log(q);
+
+ // 👉 Output {16:2,20:1}

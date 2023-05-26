@@ -1,0 +1,30 @@
+{
+  "dataa1": [
+    {
+      "product": "apple",
+
+      "productDetials": [
+        {
+          "model": "13 pro",
+          "price": "80000",
+          "modelNumber": "20220321",
+          "color": "black"
+        },
+
+        {
+          "model": "13",
+          "price": "70000",
+          "modelNumber": "20201210",
+          "color": "black"
+        },
+
+        {
+          "model": "13 pro max",
+          "price": "90000",
+          "modelNumber": "2021",
+          "color": "black"
+        }
+      ]
+    }
+  ]
+}
